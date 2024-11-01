@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navigation{
+    background-color: #49a3af;
+    height: 3.5rem;
+    align-items: center;
+}   
+#heading{
+    color: white;
+    text-align: center;
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+}
+
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.top, .botton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px 0px 20px 0px;
+
+}
+
+.block, input, select{
+    width: 80%;
+}
+.btn{
+    width: 30%;
+}
+.top>.block{
+    margin: 0px;
+}
+.footer>.btn{
+    margin: 10px;
+}
+.block>p{
+    margin: 0px auto;
+    width: 45%;
+}
+.canvas{
+    border: 2px solid red;
+}
+

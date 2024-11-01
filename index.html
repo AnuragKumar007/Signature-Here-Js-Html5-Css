@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignHere</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Yarndings+20&display=swap" rel="stylesheet">
+
+    <!-- footer buttons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- favicon -->
+     <link rel="shortcut icon" href="Favicon/favicon-16x16.png" type="image/x-icon">
+</head>
+<body>
+    <div class="navigation">
+        <h1 id="heading">SignHere</h1>
+    </div>
+    <div class="main">
+        <div class="top">
+            <div class="block">
+                <p>Text Color Picker</p>
+                <input class="form-control" type="color" id="textColorPick">
+            </div>
+            <div class="block">
+                <p>Background</p>
+                <input  class="form-control" type="color" id="canvasColor">
+            </div>
+            <div class="block">
+                <p>Font Size</p>
+                <select id="fontSize">
+                    <option value="5">5px</option>
+                    <option value="10">10px</option>
+                    <option value="20">20px</option>
+                    <option value="30">30px</option>
+                    <option value="40">40px</option>
+                    <option value="50">50px</option>
+                </select>
+            </div>
+        </div>
+        <canvas class="canvas" id="myCanvas" height="500px" width="800px"></canvas>
+        <div class="footer">
+            <button type="button" class="btn btn-danger" id="clearBtn">Clear</button>
+            <button type="button" class="btn btn-success" id="saveBtn">Save & Download</button>
+            <button type="button" class="btn btn-warning" id="retrieveBtn">Retrieve saved Signature</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
